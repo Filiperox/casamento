@@ -19,7 +19,9 @@ img {
 
 :root {
     --cor0: #bb9f7f96;
+    --cor01: #8d775e96;
     --cor1: #423531;
+    --cor3: #D7C6B3;
 
     --fonte-header: "Great Vibes", cursive;
     --fonte-bebas: 'Bebas Neue', Arial, Verdana, Helvetica, sans-serif;
@@ -27,10 +29,17 @@ img {
 }
 
 
-*{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
 
 /* ---------BODY-------------- */
 body {
@@ -38,6 +47,8 @@ body {
     max-width: 900px; /* tamanho max da tela*/
     min-height: 280px; /*tamanho minimo da tela*/
     margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 /* -----------CONFIG H ---------*/
@@ -47,29 +58,37 @@ h1{
 
 h2{
     font-family: var(--fonte-cursiva);
+    text-align: center;
+    color: var(--cor1);
 }
 
 h3{
     font-family: var(--fonte-cursiva);
+    
 }
 
 /*------------HEADER---------- */
 .content{
-    background-image: url(image/background3.jpg);
+    flex: 1;
 }
 
 header {
+    background-image: url(image/background3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
     
 }
 
 header h1{
     font-family: var(--fonte-header);
     color: white;
-    font-size: 5em;
+    font-size: 6em;
     word-spacing: 10px;
     text-shadow: 2px 2px 4px #42353198;
     text-align: center;
-    padding: 20px;
+    padding: 20px 0px 10px 0px;
     
 }
 
@@ -78,31 +97,142 @@ header h1{
     font-family: var(--fonte-bebas);
     text-align: center;
     padding: 5px;
+    word-spacing: 2px;
+    letter-spacing: 0.6px;
 }
 
 .menu a{
     color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.479);
     text-decoration: none;
     margin-top: 20px;
     margin-right: 30px;
+    font-size: 1.1em;
+}
+
+.menu a:hover {
+    color: var(--cor1);
+    transition: 0.5s;
 }
 
 /* ---------------MAIN-------------- */
 main{
     background-color: white;
     padding: 20px;
+    background-color: var(--cor3);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
 }
 
 main h2{
     font-family: var(--fonte-cursiva);
+    padding: 20px 0px 0px 20px;
 }
 
+main a {
+    text-decoration: none;
+    display: flex;
+    columns: 2;  
+    color: white;
+    margin: 10px;
+}
+
+main .noivos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+main .noivos a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.479);
+    padding: 10px 20px; 
+    background-color: var(--cor0);
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.listapresentes h2{
+    padding-bottom: 40px;
+    
+}
+
+.linkpresentes1 {
+    font-family: var(--fonte-cursiva);
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.637);
+    padding: 20px 35px;
+    background-color: var(--cor0);
+    border-radius: 5px;
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    line-height: 10px; 
+}
+
+a.linkpresentes1:hover {
+    color: var(--cor1);
+    transition: 0.4s;
+}
+
+/* -----NOIVOS NOIVO NOIVA----- */
+
+.noivos {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 20px;   
+}
+
+.noivos a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: var(--cor1);
+    border-radius: 5px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.noivos a:hover{
+    color: var(--cor1);
+    background-color: var(--cor01);
+    
+    
+}
 /* ---------VOLTAR-------- */
 .voltar {
     font-family: var(--fonte-bebas);
+    padding: 40px 0px 0px 0px;
+    text-align: center;
+    font-size: 1.3em;
+    
 }
 
+.voltar a {
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+.voltar a:hover{
+    color: var(--cor01);
+    text-decoration: underline;
+}
 /* ----------------FOOTER --------------*/
 footer{
     font-family: var(--fonte-bebas);
+    text-align: center;
+    background-color: var(--cor1);
+    color: white;
+    padding: 10px;
 }
