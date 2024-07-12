@@ -1,0 +1,349 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playwrite+CU:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+body{
+    background-color: #E9E2D6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-bottom: 0px;
+}
+
+.content {
+    flex: 1; /* Faz com que o conteúdo ocupe o espaço disponível */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+}
+    body h2{
+    text-align: center;
+    font-family: "Playwrite CU", cursive;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+/* IMAGEM CABEÇALHO */
+header {
+    background-image: url('image/background2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 519px;   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    margin: 0px;
+    text-shadow: 3px 3px 8px #423531;
+}
+
+
+header h1 {
+    color: #fffefd;
+    font-size: 10em;
+    margin: 0px;
+    padding: 20px;
+    word-spacing: 50px;
+    margin-bottom: 80px;
+    margin-top: 130px;
+}
+
+header nav{
+    text-align: center;  
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0px;
+    
+}
+
+header nav.menu a {
+    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    padding-right: 40px;
+    display: inline-block;
+    transition: .2s;
+    
+}
+
+nav.menu a:hover{
+    color: #bb9f7f96;
+    transform: (2);
+}
+
+.menu1 {
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+header, main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    text-align: center;
+    font-family: "Playwrite CU", cursive;
+    font-weight: 700;
+    font-size: 2em;
+    margin: 30px 0; /* Adicione um espaço inferior para separar do footer */
+    flex: 1; /* Faz com que o main ocupe o espaço restante */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+main h1 {
+    text-align: center;
+    font-family: "Playwrite CU", cursive;
+    font-weight: 700;
+    font-size: 2em;
+    margin: 30px 0px 10px 0px;
+    
+}
+
+main h2 {
+    text-align: center;
+    font-family: "Playwrite CU", cursive;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    margin: 20px;
+    
+}
+
+main p {
+    text-align: center;
+    text-indent: 30px;
+}
+
+
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.noivos, .voltar {
+    margin: 10px;
+    border: none; /* Remove a borda */
+    
+}
+.noivo, .noiva, .voltar  {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #E9E2D6;
+    color: rgb(0, 0, 0);
+    border: none;
+}
+.noivo:hover, .noiva:hover, .voltar a:hover {
+    background-color: #E9E2D6;
+}
+
+.noivo {
+    background-color: #E9E2D6;
+    font-family: "Playwrite CU", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2em;
+}
+
+.noiva {
+    background-color: #E9E2D6;
+    font-family: "Playwrite CU", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2em;
+}
+
+.voltar {
+    font-family: "Bebas Neue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.5em;
+}
+
+
+
+
+
+/* button.noivos a {
+    text-decoration: none;
+    align-items: center;
+    margin: auto;
+}
+
+.noivos {
+    display: block;
+    text-align: center;
+    align-items: center;
+    padding: 40px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2em;
+}
+
+
+button a{
+    text-align: center;
+    align-items: center;
+}
+
+
+button.voltar a {
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+}
+
+.voltar{
+
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.1em;
+    padding: 10px;
+    text-align: center;
+} */
+
+footer {
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #9B7B61;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: auto; /* Empurra o footer para o final do body */
+    flex-shrink: 0; /* Evita que o footer diminua de tamanho */
+    position: fixed; /* Fixa o footer no final da viewport */
+    bottom: 0; /* Coloca o footer no final da página */
+}
+
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer a:hover{
+    color: rgb(146, 239, 255);
+}
+/* INDEX.HTML - INICIO*/
+
+/* PAG1.HTML - NOSSA HISTÓRIA*/
+
+/* ------------------NOIVO.HTML - O NOIVO------------ */
+
+/* .noivo {
+    padding: 30px;
+    
+}
+
+/* ------------------NOIVA.HTML - A NOIVA ------------*/
+
+/* .noiva {
+    padding: 30px;
+} */ 
+
+/* PAG2.HTML - LISTA DE PRESENTES */
+
+/* ----------------------PAG3.HTML - O CASAMENTO---------------- */
+
+
+
+
+main.listapresentes p{
+    text-align: center;
+}
+
+.listapresentes a {
+    text-decoration: none;
+}
+
+.listapresentes h4{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.6em;
+    text-align: center;
+    padding: 40px 0px 20px 0px;
+}
+
+
+
+
+html, body {
+    width: 100%; /* Largura total da viewport */
+    height: 100%; /* Altura total da viewport */
+    margin: 0; /* Remove as margens padrão */
+    padding: 0; /* Remove os preenchimentos padrão */
+    box-sizing: border-box; /* Define o box-sizing para incluir padding e border no tamanho total do elemento */
+}
+
+/* Define um tamanho mínimo e máximo para a página */
+body {
+    min-width: 320px; /* Largura mínima da página */
+    max-width: 1920px; /* Largura máxima da página */
+    min-height: 600px; /* Altura mínima da página */
+    max-height: 100%; /* Altura máxima da página */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Define o tamanho de um contêiner */
+div.container {
+    width: 80%; /* Largura de 80% da página */
+    max-width: 1000px; /* Largura máxima de 1000px */
+    height: 80vh; /* Altura de 80% da viewport */
+    margin: 20px auto; /* Centraliza o contêiner horizontalmente com 20px de margem superior e inferior */
+    padding: 20px; /* Adiciona padding interno */
+    background-color: #943f3f; /* Cor de fundo do contêiner */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para o contêiner */
+}
+
+/* LINK DE PRESENTES */
+
+nav .lista-presentes {
+    font-family: "Bebas Neues",sans-serif;
+    text-align: center;  
+    background-color: #9B7B61;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: black;
+}
+
+/* PICTURE */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item img {
+    max-width: 180px; 
+    height: 180px; 
+    display: block; 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
